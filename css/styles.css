@@ -1,0 +1,26 @@
+@keyframes pump {
+    100% {
+        transform: scale(2);
+    }
+}
+
+body {
+    background-color: rgba(52, 73, 94, 0.50);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.lungs {
+    height: 10%;
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 15%;
+    display: block;
+    animation: pump 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
